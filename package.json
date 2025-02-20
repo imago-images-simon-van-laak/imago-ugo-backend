@@ -1,0 +1,29 @@
+{
+    "name": "media-search",
+    "version": "1.0.0",
+    "description": "Media search API using Elasticsearch and Express in TypeScript with scalability improvements",
+    "main": "dist/app.js",
+    "scripts": {
+        "start": "ts-node src/server.ts",
+        "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+        "build": "tsc",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@elastic/elasticsearch": "^8.10.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.18.2",
+        "redis": "^4.6.5"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.17",
+        "@types/jest": "^29.5.14",
+        "jest": "^29.7.0",
+        "nodemon": "^2.0.22",
+        "ts-jest": "^29.2.5",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.0"
+    }
+}
